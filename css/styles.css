@@ -32,8 +32,19 @@ a {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 /* Навигация */
 
 .nav {
@@ -71,6 +82,7 @@ a {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
+    text-transform: uppercase;
     text-align: center;
 }
 
@@ -78,9 +90,19 @@ a {
     background: #2F303A;
 }
 
+.hero {
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 280px;
+}
+
 .button {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-bottom: 200px;
+    text-align: center;
 }
 
 .button {
@@ -88,11 +110,20 @@ a {
 }
 
 /*main*/
+
+.container {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
 .section-title {
     color: var(--primary-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    margin: 0px;
+    padding-top: 94px;
 }
 
 .section-title-name {
@@ -107,6 +138,8 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
+    margin: 0px;
+    padding-top: 10px;
 }
 
 .caption {
@@ -115,6 +148,14 @@ a {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    margin-top: 94px;
+    margin-bottom: 0px;
+}
+
+.li-caption {
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .proffesion{

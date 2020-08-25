@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <!--Панель навигации-->
@@ -28,13 +29,14 @@
     <main> 
         <!--Верхний блок-->
         <section class="hero block">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero-title">Эффективные решения <br>для вашего бизнеса</h1>
             <a href="" class="button">Заказать услугу</a>
         </section>
 
     <!--Преимущества-->
     <section class="section">
-        <ul class="list">
+        <div class="container"> 
+            <ul class="list">
             <li>
                 <h3 class="section-title">Внимание к деталям</h3>
                 <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -52,38 +54,44 @@
                 <p class="section-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
+    </div>   
     </section>
    
     <!--Чем занимается компания-->
     <section>
-        <h2 class="caption">Чем мы занимаемся</h2>
-        <ul class="list">
-            <li><img src="./images/box_1.jpg" alt="Сфера деятельности компании 1" width="370" /></li>
-            <li><img src="./images/box_2.jpg" alt="Сфера деятельности компании 2" width="370" /></li>
-            <li><img src="./images/box_3.jpg" alt="Сфера деятельности компании 3" width="370" /></li>
-        </ul>
+        <div class="container">
+            <h2 class="caption">Чем мы занимаемся</h2>
+            <ul class="list">
+                <li class="li-caption"><img src="./images/box_1.jpg" alt="Сфера деятельности компании 1" width="370" /></li>
+                <li class="li-caption"><img src="./images/box_2.jpg" alt="Сфера деятельности компании 2" width="370" /></li>
+                <li class="li-caption"><img src="./images/box_3.jpg" alt="Сфера деятельности компании 3" width="370" /></li>
+            </ul>
+        </div>
+      
     </section>
 
     <section class="title-text">
-        <h2 class="caption">Наша команда</h2>
-        <ul class="list">
-            <li><img src="./images/team_card_1.jpg" alt="Член нашей команды 1" width="270" />
-                <h3 class="section-title-name">Игорь Демьяненко</h3>
-                    <p lang="en"><span class="proffesion">Product Designer</span></p>
-            </li>
-            <li><img src="./images/team_card_2.jpg" alt="Член нашей команды 2" width="270" />
-                <h3 class="section-title-name">Ольга Репина</h3>
-                    <p lang="en"><span class="proffesion">Frontend Developer</span></p>
-            </li>
-            <li><img src="./images/team_card_3.jpg" alt="Член нашей команды 3" width="270" />
-                <h3 class="section-title-name">Николай Тарасов</h3>
-                    <p lang="en"><span class="proffesion">Marketing</span></p>
+        <div class="container">
+            <h2 class="caption">Наша команда</h2>
+            <ul class="list">
+                <li><img src="./images/team_card_1.jpg" alt="Член нашей команды 1" width="270" />
+                    <h3 class="section-title-name">Игорь Демьяненко</h3>
+                        <p lang="en"><span class="proffesion">Product Designer</span></p>
                 </li>
-            <li><img src="./images/team_card_4.jpg" alt="Член нашей команды 4" width="270" />
-                <h3 class="section-title-name">Михаил Ермаков</h3>
-                    <p lang="en"><span class="proffesion">UI Designer</span></p>
-            </li>
-        </ul>
+                <li><img src="./images/team_card_2.jpg" alt="Член нашей команды 2" width="270" />
+                    <h3 class="section-title-name">Ольга Репина</h3>
+                        <p lang="en"><span class="proffesion">Frontend Developer</span></p>
+                </li>
+                <li><img src="./images/team_card_3.jpg" alt="Член нашей команды 3" width="270" />
+                    <h3 class="section-title-name">Николай Тарасов</h3>
+                        <p lang="en"><span class="proffesion">Marketing</span></p>
+                    </li>
+                <li><img src="./images/team_card_4.jpg" alt="Член нашей команды 4" width="270" />
+                    <h3 class="section-title-name">Михаил Ермаков</h3>
+                        <p lang="en"><span class="proffesion">UI Designer</span></p>
+                </li>
+            </ul>
+        </div>
     </section>
 </main>
    
