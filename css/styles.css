@@ -14,6 +14,10 @@ a {
     text-decoration: none;
 }
 
+.logo {
+    margin-right: 93px;
+}
+
 .logo-header {
     color: #2196F3;
     font-family: Raleway;
@@ -47,14 +51,45 @@ a {
 
 /* Навигация */
 
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.container.nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    display: flex;
+}
+
+.link-item{
+    margin-right: 50px;
+    
+}
+
+.link-item:last-child {
+    margin-right: 0px;
+}
+
+.link {
+    margin-left: 50px;
+}
+
+.link:first-child {
+    margin-left: 0px;
 }
 
 .nav-title {
     color: var(--primary-text-color);
+    padding-bottom: 32px;
+    padding-top: 32px;
+    display: block;
 }
 
 .nav .nav-title:hover, :focus {
@@ -66,6 +101,12 @@ a {
 } 
 
 /* Контакты */
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
 .contacts-title {
     color: var(--primary-text-color);
     font-weight: 500;
@@ -88,6 +129,8 @@ a {
 
 .hero.block {
     background: #2F303A;
+    max-width: auto;
+  
 }
 
 .hero {
@@ -96,7 +139,7 @@ a {
     padding-bottom: 280px;
 }
 
-.button {
+.button-link {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border-radius: 4px;
@@ -111,10 +154,8 @@ a {
 
 /*main*/
 
-.container {
-    width: 1200px;
-    margin: 0px auto;
-    padding: 0px 15px;
+.advantages {
+    display: flex;
 }
 
 .section-title {
@@ -131,6 +172,24 @@ a {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.proffesion{
+    color: var(--title-text-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+    
+}
+
+.profession-item {
+    margin: 0px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .section-text {
@@ -138,8 +197,16 @@ a {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
-    margin: 0px;
-    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.section-text.item {
+    margin-right: 30px;
+}
+
+.section-second {
+    background-color: #F5F4FA;
 }
 
 .caption {
@@ -152,29 +219,56 @@ a {
     margin-bottom: 0px;
 }
 
-.li-caption {
-    margin: 0px;
-    padding-top: 50px;
-    padding-bottom: 94px;
+.caption-img {
+    display: flex;
 }
 
-.proffesion{
-    color: var(--title-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.2;
+.li-caption {
+    margin-top: 50px;
+    margin-bottom: 94px;
+    margin-right: 30px;
 }
+
+.team {
+    display: flex;
+}
+
+.team-img {
+    margin-top: 50px;
+    margin-right: 30px;
+    margin-bottom: 94px;
+}
+
+.team-img:last-child {
+    margin-right: 0px;
+}
+
+.li-caption:last-child {
+    margin-right: 0px;
+}
+
+
 
 /* Портфолио */
-.filtres .button{
-    background-color: #F5F4FA;
-    color: var(--primary-text-color);
+
+.button-item {
+    padding: 6px 22px;
+    margin-right: 8px;
+    background: #F5F4FA;
+    border-radius: 4px;
 }
 
-.filtres .button :hover, :focus {
+.filtres {
+    display: flex; 
+    justify-content: center;
+}
+
+.filtres .button:hover,:focus {
     background-color: var(--accent-color);
     color: #ffffff;
 }
+
+
 .heading {
     display: none;
 }
@@ -184,6 +278,8 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
+    margin-top: 20px;
+    margin-bottom: 0px;
 }
 
 .portfolio-text {
@@ -191,10 +287,36 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
+    margin-top: 4px;
+    margin-bottom: 20px;
+}
+
+.cart {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-galery {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.img-galery:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.text-item {
+    padding-left: 24px;
 }
 
 .footer-block {
     background: #2F303A;
+}
+
+.logo-footer {
+    display: block;
+    padding-top: 60px;
 }
 
 .address {
@@ -204,6 +326,7 @@ a {
     font-size: 14px;
     line-height: 1.7;
     color: #FFFFFF;
+    padding-top: 20px;
 }
 
 .logo-title-footer {
@@ -216,8 +339,14 @@ a {
 
 .contacts-title-footer {
     font-family: Roboto, sans-serif;
-font-weight: 400;
-font-size: 14px;
-line-height: 1.7;
-color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 9px;
+}
+
+.footer-item {
+    display: block;
+    padding-bottom: 60px;
 }
