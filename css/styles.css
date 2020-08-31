@@ -131,7 +131,6 @@ a {
 
 .hero.block {
     background: #2F303A;
-    max-width: auto;
   
 }
 
@@ -210,11 +209,15 @@ a {
 
 .section-first {
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .section-second {
     background-color: #F5F4FA;
     text-align: center;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .caption {
@@ -223,14 +226,12 @@ a {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    margin-top: 94px;
-    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
 }
 
 .caption-img {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 94px;
 }
 
 .li-caption {
@@ -239,8 +240,6 @@ a {
 
 .team {
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 94px;
 }
 
 .team-img {
