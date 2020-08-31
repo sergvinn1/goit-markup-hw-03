@@ -294,7 +294,6 @@ a {
 
 .heading-content {
     padding-top: 94px;
-    padding-bottom: 34px;
 }
 
 .portfolio-title {
@@ -302,8 +301,8 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
-    margin-top: 20px;
     margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 .portfolio-text {
@@ -319,10 +318,7 @@ a {
 .cart {
     display: flex;
     flex-wrap: wrap;
-}
-
-.cart-item {
-    padding-bottom: 94px;
+    padding-top: 34px;
 }
 
 .img-galery {
@@ -340,7 +336,9 @@ a {
 }
 
 .text-item {
+    display: block;
     padding-left: 24px;
+    margin-top: 20px;
 }
 
 .footer-block {
